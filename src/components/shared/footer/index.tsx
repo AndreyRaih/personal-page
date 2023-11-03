@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./footer.module.css";
-import Socials, { SocialIcon } from "../../socials";
+import Socials from "~/components/socials";
+import type { SocialIcon } from "~/components/socials";
 
 export default component$(() => {
   const socials: SocialIcon[] = [

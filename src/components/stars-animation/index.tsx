@@ -64,23 +64,26 @@ export default component$((props: StarAnimationProps) => {
     const canvas = useSignal<HTMLCanvasElement>();
 
     useVisibleTask$(({ cleanup }) => {
-        let stars: Star[] = [];
-        let animateInterval: any;
+        const stars: Star[] = [];
+        const context = canvas.value!.getContext('2d') as CanvasRenderingContext2D;
+
         canvas.value!.setAttribute('height', props.height.toString());
         canvas.value!.setAttribute('width', props.width.toString());
-        const context = canvas.value!.getContext('2d') as CanvasRenderingContext2D;
+
         for (let i = 0; i < props.numStars; i++) {
-            let x = Math.round(Math.random() * props.width);
-            let y = Math.round(Math.random() * props.height);
-            let length = 1 + Math.random() * 1.5;
-            let opacity = Math.random();
-            let star = new Star({ x, y, length, opacity });
+            const x = Math.round(Math.random() * props.width);
+            const y = Math.round(Math.random() * props.height);
+            const length = 1 + Math.random() * 1.5;
+            const opacity = Math.random();
+            const star = new Star({ x, y, length, opacity });
             stars.push(star);
         }
-        animateInterval = setInterval(() => {
+
+        const animateInterval = setInterval(() => {
             context.clearRect(0, 0, props.width, props.height);
             stars.forEach(star => star.draw(context));
         }, 1000 / props.fps);
+        
         cleanup(() => { clearInterval(animateInterval) })
     })
 
