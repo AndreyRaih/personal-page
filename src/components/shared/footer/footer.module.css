@@ -1,0 +1,18 @@
+.footer {
+  @apply flex flex-col justify-center items-center pt-24 mx-auto;
+}
+.footer h3 {
+  @apply text-white text-4xl pb-1 font-bold;
+}
+
+.footer h4 {
+  @apply text-white/70 text-xl pb-1;
+}
+
+.footer span {
+  @apply text-white opacity-25 text-3xl;
+}
+
+.socials {
+  @apply pt-4 pb-8
+}

@@ -1,0 +1,47 @@
+.card {
+    @apply overflow-hidden
+}
+
+.content {
+    @apply relative z-20
+}
+
+.headline {
+    @apply flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between md:pb-0
+}
+
+.greeting {
+    @apply flex flex-row items-center justify-start pb-4 md:pb-0
+}
+
+.greeting .avatar {
+    @apply w-14 h-14 bg-gradient-to-br from-cyan-600 to-cyan-500 rounded-full mr-4 flex justify-center items-center
+}
+
+.greeting .title {
+    @apply flex flex-col items-start justify-center
+}
+
+.greeting .title p {
+    @apply text-xl md:text-base text-white
+}
+
+.greeting .title span {
+    @apply text-lg md:text-sm text-gray-500
+}
+
+.about {
+    @apply flex flex-col items-start justify-start md:w-3/4 md:h-72 pb-8 md:pb-0
+}
+
+.about h1 {
+    @apply text-5xl text-white font-bold py-10
+}
+
+.about p {
+    @apply text-base text-gray-400
+}
+
+.background {
+    @apply absolute inset-0 min-w-[1600px] h-[1400px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+}

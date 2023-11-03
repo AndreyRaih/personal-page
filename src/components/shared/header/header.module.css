@@ -1,0 +1,23 @@
+.header {
+  @apply md:container mx-auto flex flex-row justify-center items-center pb-24 md:justify-between
+}
+
+.greeting {
+  @apply text-3xl md:text-2xl text-white
+}
+
+.greeting span {
+  @apply text-gray-500
+}
+
+.header ul {
+  @apply hidden space-x-10 md:inline-flex
+}
+
+.header li {
+  @apply text-2xl text-white
+}
+
+.header li a {
+  @apply text-gray-500 hover:text-gray-400 transition-colors duration-300
+}

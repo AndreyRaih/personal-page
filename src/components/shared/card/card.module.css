@@ -1,0 +1,33 @@
+.card {
+    @apply relative h-full w-full bg-gray-800/30 backdrop-blur-sm rounded-xl md:rounded-[50px] px-8 md:px-14 py-6 md:py-12
+}
+
+.highlight-bl-tr:before {
+    background: linear-gradient(18.48deg,rgba(255,255,255,.25) 2.76%,rgba(255,255,255,0) 17.23%),linear-gradient(200.6deg,rgba(255,255,255,.25) 4.13%,rgba(255,255,255,0) 20.54%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+} 
+
+.highlight-tl-br:before {
+    background: linear-gradient(112.59deg,rgba(255,255,255,0) 83.32%,rgba(255,255,255,.1) 94.31%),linear-gradient(109.73deg,rgba(255,255,255,.1) 7.85%,rgba(255,255,255,0) 19.46%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+}

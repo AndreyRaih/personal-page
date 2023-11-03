@@ -1,0 +1,31 @@
+.card {
+    @apply overflow-hidden relative
+}
+
+.headline {
+    @apply relative z-20 flex flex-col justify-center items-center text-center md:text-left pb-8 md:pb-0 md:justify-start md:items-start w-full md:w-1/2
+}
+
+.headline p {
+    @apply text-sm text-white
+}
+
+.headline h1 {
+    @apply text-3xl text-white font-bold py-4
+}
+
+.headline span {
+    @apply text-sm md:text-base text-gray-400
+}
+
+.headline span b {
+    @apply text-gray-300
+}
+
+.background {
+    @apply absolute inset-0 min-w-[1200px] h-[800px] md:min-w-[1600px] md:h-[1200px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+}
+
+.stars {
+    @apply w-[600] absolute top-0 right-0 flex justify-center md:justify-end items-start
+}

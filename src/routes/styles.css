@@ -1,0 +1,8 @@
+.app-container {
+    @apply min-h-screen py-24 px-4 md:px-36 bg-gradient-to-r from-slate-950 to-gray-900;
+}
+
+.app-container main {
+    @apply container mx-auto
+}
+

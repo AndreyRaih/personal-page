@@ -1,0 +1,11 @@
+.frameworks-image {
+    @apply h-[200px] md:h-[460px] absolute top-1/2 left-1/2 -translate-x-[60%] md:-translate-x-2/3 -translate-y-1/2 right-60 md:right-40 z-10 hidden md:block
+}
+
+.frameworks-current {
+    @apply animate-levitate
+}
+
+.qwik-image {
+    @apply relative animate-levitate md:hidden mx-auto z-20 pt-8
+}

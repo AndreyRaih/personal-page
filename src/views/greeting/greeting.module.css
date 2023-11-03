@@ -1,0 +1,35 @@
+.card {
+    @apply overflow-hidden flex flex-col items-center justify-end !p-0 bg-gradient-to-b from-cyan-800 to-cyan-300
+}
+
+.parallax-container {
+    @apply ease-in-out duration-1000
+}
+
+.image {
+    @apply w-[320px] h-auto z-20 relative
+}
+
+.circle {
+    @apply z-10 animate-circle-pulse rounded-full bg-cyan-50 absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2
+}
+
+.circle:nth-child(1) {
+    @apply w-[400px] h-[400px] animation-delay-200 opacity-60
+}
+
+.circle:nth-child(2) {
+    @apply w-[480px] h-[480px] animation-delay-400 opacity-20
+}
+
+.circle:nth-child(3) {
+    @apply w-[560px] h-[560px] animation-delay-600 opacity-[0.15]
+}
+
+.circle:nth-child(4) {
+    @apply w-[640px] h-[640px] animation-delay-800 opacity-10
+}
+
+.circle:nth-child(5) {
+    @apply w-[720px] h-[720px] animation-delay-1000 opacity-[0.02]
+}
