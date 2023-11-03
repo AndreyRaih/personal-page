@@ -43,5 +43,5 @@
 }
 
 .background {
-    @apply absolute inset-0 min-w-[1600px] h-[1400px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    @apply absolute inset-0 min-w-[1100px] h-[1400px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
 }

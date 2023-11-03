@@ -22,7 +22,7 @@ export default component$(() => {
     
     return (
         <Card highlight="rtl" id="mindset" class={styles.card}>
-            <BackgroundImg class={styles.background} sizes="1600" />
+            <BackgroundImg class={styles.background} />
             <div class={styles.content}>
                 <section class={styles.headline}>
                     <div class={styles.greeting}>

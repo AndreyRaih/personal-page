@@ -23,7 +23,7 @@
 }
 
 .background {
-    @apply absolute inset-0 min-w-[1200px] h-[800px] md:min-w-[1600px] md:h-[1200px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    @apply absolute inset-0 min-w-[800px] h-[800px] md:min-w-[1100px] md:h-[1200px] pointer-events-none z-10 animate-spin-slow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
 }
 
 .stars {

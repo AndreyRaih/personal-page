@@ -9,7 +9,7 @@ import StarsAnimation from "~/components/stars-animation";
 export default component$(() => {
     return (
         <Card class={styles.card} highlight="ltr">
-            <BackgroundImage class={styles.background} sizes="1600" />
+            <BackgroundImage class={styles.background} />
             <StarsAnimation class={styles.stars} width={600} height={600} numStars={200} fps={30} />
             <section class={styles.headline}>
                 <p>Continually on a path of self-improvement</p>
