@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import styles from './skills.module.css'
-import BackgroundImage from "~/media/mesh-bg-blue.png?jsx";
+import backgroundImage from "~/media/mesh-bg-blue.png";
 
 import Card from "~/components/shared/card";
 import Frameworks from "~/components/frameworks";
@@ -9,7 +9,7 @@ import StarsAnimation from "~/components/stars-animation";
 export default component$(() => {
     return (
         <Card class={styles.card} highlight="ltr">
-            <BackgroundImage class={styles.background} />
+            <img src={backgroundImage} class={styles.background} width={1100} height={1200} />
             <StarsAnimation class={styles.stars} width={600} height={600} numStars={200} fps={30} />
             <section class={styles.headline}>
                 <p>Continually on a path of self-improvement</p>
