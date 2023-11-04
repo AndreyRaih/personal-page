@@ -12,7 +12,7 @@ export default component$(() => {
     return (
         <Card class={styles.card}>
             <div class={styles['parallax-container']} style={{ transform: `translateY(${translateY.value}px)` }}>
-                <MemojiImg sizes="320px" class={styles.image} alt="Greeting section memoji image" />
+                <MemojiImg loading="eager" sizes="320px" class={styles.image} alt="Greeting section memoji image" />
                 <div class={styles.circles}>
                     {circles.map((i) => <div class={[styles.circle]} key={i}></div>)}
                 </div>

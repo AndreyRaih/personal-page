@@ -16,7 +16,7 @@ export default component$(() => {
                 <h1>
                     Now, I'm exploring Qwik.
                 </h1>
-                <span>Experienced in <b>Vue.js</b>, <b>React.js</b>, backend and cross-platform development with <b>Flutter</b> and <b>React Native</b>.</span>
+                <span>Also, I'm experienced in <b>Vue.js</b>, <b>React.js</b>, backend and cross-platform development with <b>Flutter</b> and <b>React Native</b>.</span>
             </section>
             <Frameworks />
         </Card>
