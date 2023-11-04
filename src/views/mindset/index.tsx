@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./mindset.module.css";
 
 import avatarImg from "~/media/memoji-avatar.svg";
-import backgroundImg from "~/media/mesh-bg-light-blue.png";
+import BackgroundImg from "~/media/mesh-bg-light-blue.png?jsx";
 
 import Card from "~/components/shared/card";
 import Socials, { SocialIcon } from "~/components/socials";
@@ -22,7 +22,7 @@ export default component$(() => {
     
     return (
         <Card highlight="rtl" id="mindset" class={styles.card}>
-            <img src={backgroundImg} class={styles.background} width={1100} height={1400} />
+            <BackgroundImg loading="eager" class={styles.background} alt="Mindset section background" />
             <div class={styles.content}>
                 <section class={styles.headline}>
                     <div class={styles.greeting}>

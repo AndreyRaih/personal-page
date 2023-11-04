@@ -23,7 +23,7 @@ export default component$(() => {
           <h1>Andrew<span>, Web & Mobile</span></h1>
         </div>
         <ul>
-          {links.map((link, i) => (<li key={i}><a href={link.href}>{link.label}</a></li>))}
+          {links.map((link, i) => (<li key={i}><a href={link.href} aria-label={`Navigation link to section ${link.label}`}>{link.label}</a></li>))}
         </ul>
     </header>
   );

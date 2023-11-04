@@ -21,9 +21,9 @@ export default component$(() => {
 
   return (
     <footer id="contact" class={styles.footer}>
-      <h3>Contact me</h3>
+      <h1>Contact me</h1>
       <Socials class={styles.socials} style="outline" icons={socials} />
-      <h4>Made with 💜 ©2023</h4>
+      <h2>Made with 💜 ©2023</h2>
       <span>See ya!</span>
     </footer>
   );

@@ -3,7 +3,7 @@
 }
 
 .greeting {
-  @apply text-3xl md:text-2xl text-white
+  @apply min-w-[320px] min-h-[40px] text-3xl md:text-2xl text-white
 }
 
 .greeting span {
