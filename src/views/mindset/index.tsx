@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./mindset.module.css";
 
-import avatarImg from "~/media/memoji-avatar.svg";
+import AvatarImg from "~/media/memoji-avatar.png?jsx";
 import BackgroundImg from "~/media/mesh-bg-light-blue.png?jsx";
 
 import Card from "~/components/shared/card";
@@ -26,8 +26,8 @@ export default component$(() => {
             <div class={styles.content}>
                 <section class={styles.headline}>
                     <div class={styles.greeting}>
-                        <div class={styles.avatar}>
-                            <img height="46" width="46" src={avatarImg} alt="Andrew Raikh" />
+                        <div class={styles.image}>
+                            <AvatarImg class={styles.avatar} alt="Andrew Raikh" />
                         </div>
                         <div class={styles.title}>
                             <p>Hi, I’m Andrew.</p>

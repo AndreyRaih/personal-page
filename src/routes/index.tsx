@@ -13,8 +13,12 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Andrew Raikh - Software Engineer | Web & Mobile",
+      content: "Explore Andrew Raikh's tech journey in creating intuitive web and mobile applications, with a focus on efficiency and user-friendly design.",
     },
+    {
+      property: 'og:image',
+      content: '/og-image.png'
+    }
   ],
 };
 

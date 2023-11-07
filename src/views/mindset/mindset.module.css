@@ -14,8 +14,12 @@
     @apply flex flex-row items-center justify-start pb-4 md:pb-0
 }
 
-.greeting .avatar {
+.greeting .image {
     @apply w-14 h-14 bg-gradient-to-br from-cyan-600 to-cyan-500 rounded-full mr-4 flex justify-center items-center
+}
+
+.greeting .avatar {
+    @apply w-12
 }
 
 .greeting .title {
